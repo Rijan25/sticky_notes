@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Menu</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #logo{
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            
+        }
+        #Rijan{
+            width:250px;
+            height:auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+        #navbar{
+            background-color: aqua;
+            text-align: center;
+            
+           
+
+        }
+        h1{
+            text-align: center;
+        }
+        #center ul{
+            display:inline; 
+            padding: 50px 40px;
+            font-size: large;
+            font-weight: 300;
+            text-decoration: underline;
+        }
+        p{
+            text-align: center;
+            display: inline-block;
+        }
+        .sticky{
+            position: fixed;
+            top:0;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="download.png" id="logo">
+    <div id="navbar">
+        <nav id="center" >
+             <ul>About Us</ul>
+             <ul>Contact us</ul>
+             <ul>Location</ul>
+             <ul>Home</ul>
+        </nav> </div>
+
+        <h1><u>My Portfolio</u></h1>
+        <img src="pic.jpg" id="Rijan">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus excepturi necessitatibus reprehenderit error velit, natus ratione. Nulla incidunt totam sequi quaerat fugiat eum, porro error a quae consequatur, architecto magnam eveniet delectus tenetur natus, placeat ipsam repudiandae. Consectetur rem dicta repudiandae repellat. Odio fugiat quod tenetur corrupti alias, modi inventore ratione. Laborum consectetur, mollitia minima rerum alias maxime voluptas quos. Magni laudantium nostrum dolore exercitationem culpa fugit commodi suscipit corporis totam ullam assumenda, libero officiis tenetur sapiente dolor aliquid debitis, ad dolorem iste magnam maiores facere earum molestiae! Nostrum, sapiente quae sint dolor iusto ut eos soluta eius corporis quo?</p>
+    <script>
+        window.addEventListener("scroll",function(){
+            let nav=document.getElementById("navbar");
+            if(window.pageYOffset>=190){
+                nav.classList.add("sticky");
+                
+            }else{
+                nav.classList.remove("sticky");
+            }
+
+        });
+    </script>
+
+   
+    
+</body>
+</html>
